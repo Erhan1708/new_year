@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #1A5B35;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   position: relative;
+}
+
+.wraper {
+   width: 662px;
+}
+
+.content {
+   text-align: center;
+}
+
+.content h1 {
+   font-family: 'Comforter', sans-serif;
+   font-weight: 400;
+   font-size: 72px;
+   line-height: 115px;
+   color: #CEB076;
+   
+}
+
+.content p {
+   padding-top: 20px;
+   font-family: 'Poiret One', sans-serif;
+   font-weight:400;
+   font-size: 18px;
+   line-height: 22px;
+   color: white;
+
+}
+.img_topLeft{
+   position: absolute;
+   left: 0;
+   top: 10px;
+   width: 100px;
+}
+.img_tobRight{
+   position: absolute;
+   right: 0;
+   top: 0;
+   width: 105px;
+}
+.img_bottom{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 110px;
+}
+.img_muzik{
+   position: absolute;
+   left: 7px;
+   bottom: 60px;
+   width: 50px;
+}
+.sign {
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   margin-top: 30px;
+}
+
+.sign img {
+   position: absolute;
+   padding-left: 280px;
+}
+
+.sign p {
+   font-family: 'Poiret One', cursive;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 22px;
+   color: #FFFFFF;
+}
+.logo{
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+}
