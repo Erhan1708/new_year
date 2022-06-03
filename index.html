@@ -10,8 +10,10 @@
 <body>
 	<img class="img_topLeft" src="./img/group.svg" alt="">
 	<img class="img_tobRight" src="./img/group2.svg" alt="">
-	<img class="img_muzik" src="./img/group3.svg" alt="">
+	<img class="img_muzik" src="./img/group3.svg" alt="" onclick="document.getElementById('pl').pause(); ">
 	<img class="img_bottom" src="./img/img2.svg" alt="">
+	<span>Включите
+	мелодию</span>
 	<div class="wraper">
 		<div class="content">
 			<h1>Дорогие друзья!</h1>
@@ -40,5 +42,7 @@
 			<img src="./img/megacom.svg" alt="logo MegaCom">
 		</div>
 	</div>
+	<audio id="pl" src="./aud/song.mp3"></audio>
+	<script src="./script.js"></script>
 </body>
 </html>

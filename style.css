@@ -30,42 +30,50 @@ body {
    font-size: 72px;
    line-height: 115px;
    color: #CEB076;
-   
+
 }
 
 .content p {
    padding-top: 20px;
    font-family: 'Poiret One', sans-serif;
-   font-weight:400;
+   font-weight: 400;
    font-size: 18px;
    line-height: 22px;
    color: white;
 
 }
-.img_topLeft{
+
+.img_topLeft {
    position: absolute;
    left: 0;
    top: 10px;
    width: 100px;
 }
-.img_tobRight{
+
+.img_tobRight {
    position: absolute;
    right: 0;
    top: 0;
    width: 105px;
 }
-.img_bottom{
+
+.img_bottom {
    position: absolute;
    left: 0;
    bottom: 0;
    width: 110px;
+   z-index: 0;
 }
-.img_muzik{
+
+.img_muzik {
    position: absolute;
    left: 7px;
    bottom: 60px;
    width: 50px;
+   cursor: pointer;
+   z-index: 1;
 }
+
 .sign {
    display: flex;
    flex-direction: row;
@@ -89,8 +97,59 @@ body {
    line-height: 22px;
    color: #FFFFFF;
 }
-.logo{
+
+.logo {
    display: flex;
    justify-content: center;
    margin-top: 100px;
+}
+
+span {
+   width: 100px;
+   color: white;
+   font-size: 13px;
+   position: absolute;
+   left: 7px;
+   bottom: 110px;
+}
+
+@media(max-width:576px) {
+   .img_tobRight {
+      display: none;
+   }
+
+   .img_topLeft {
+      width: 75px;
+   }
+
+   .content h1 {
+      font-size: 50px;
+   }
+
+   .content {
+      margin: 30px;
+   }
+
+   .img_bottom {
+      display: none;
+   }
+
+   .logo {
+      margin: 0 auto;
+      padding-top: 30px;
+   }
+
+   .img_muzik {
+      position: absolute;
+      top: 50px;
+      left: 80%;
+   }
+
+   span {
+      position: absolute;
+      top: 10px;
+      left: 73%;
+      font-size: 15px;
+      text-align: center;
+   }
 }
